@@ -1,0 +1,32 @@
+.summary-page {
+    .content {
+        position: absolute;
+        left: 3vw;
+        top: 3vw;
+        width: 94vw;
+        height: calc(100vh - 6vw);
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .title {
+            align-self: end;
+            font-size: 2vw;
+            font-weight: 700;
+        }
+        .subtitle {
+            margin: 1vw 0 0;
+            font-size: 4vw;
+            font-weight: 200;
+        }
+        .start-button {
+            width: 18%;
+            border: 2px solid #333;
+            text-align: center;
+            height: 30%;
+            font-size: 2vw;
+            border-radius: 5vw;
+            padding: 0.75vw 0;
+        }
+    }
+}
