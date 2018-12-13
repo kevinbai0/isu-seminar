@@ -16,6 +16,12 @@ const introTransition = (refs, callback) => {
         easing: "easeInOutQuad",
         duration: 1000,
         offset: 0
+    }).add({
+        targets: refs.timelineSection.current,
+        opacity: [0,1],
+        duration: 1000,
+        offset: 0,
+        easing: "easeInOutQuad"
     })
     timeline.finished.then(() => callback && callback());
 }

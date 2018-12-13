@@ -81,7 +81,7 @@ class Timeline extends React.Component {
         let {shouldCondense} = this.props;
 
         return (
-            <div className="timeline">
+            <div className="timeline" ref={this.props.reference}>
                 <div className="timeline-line">
                     {
                         

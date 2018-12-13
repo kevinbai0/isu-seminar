@@ -1,6 +1,7 @@
 import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
+import mainStylesheet from "../stylesheets/mainStyle.js";
 
 const defaultDescription = ''
 const defaultOGURL = ''
@@ -21,6 +22,7 @@ const CustomHead = props => (
     <link rel="icon" href="/static/favicon.ico" />
     <link rel="stylesheet" href="/static/global.css"/>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet"/>
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta
@@ -33,6 +35,7 @@ const CustomHead = props => (
     <meta property="og:image" content={props.ogImage || defaultOGImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    {mainStylesheet}
   </NextHead>
 )
 

@@ -24,10 +24,10 @@ class SummaryTimelinePage extends React.Component {
                 ishvarAndOm: React.createRef(),
                 maneck: React.createRef()
             },
-            timelineTitle: React.createRef()
+            timelineTitle: React.createRef(),
+            timelineSection: React.createRef()
         }
     }
-
     componentDidUpdate() {
         let {currentSlideState} = this.state;
         if (currentSlideState === this.slideStates.finishedCondensedTimeline) {
@@ -129,6 +129,7 @@ class SummaryTimelinePage extends React.Component {
                         chapterName: "The Circle is Completed",
                     },
                 ]}
+                reference={this.cRefs.timelineSection}
                 condensedIndexes={this.props.customCondensed ? this.props.customCondensed : [1, 6, 7]}
                 completedCondensation={() => this.completedTimelineCondensation()}
             />

@@ -1,7 +1,6 @@
 import React from "react";
 import "../CustomHead";
 import Slide from "../Slide";
-import "../../stylesheets/pages/landingStyle.scss";
 import CameraShotDiv from "../CameraShotDiv";
 import anime from "animejs";
 import Router from "next/router";
