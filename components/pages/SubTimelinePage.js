@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "../Slide";
-import "../../stylesheets/pages/subTimelineStyle.scss";
 import Router from "next/router";
 
 class SubTimelinePage extends React.Component {

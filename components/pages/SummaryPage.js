@@ -1,7 +1,6 @@
 import React from "react";
 import Slide from "../Slide";
 import CameraShotDiv from "../CameraShotDiv";
-import "../../stylesheets/pages/summaryStyle.scss";
 import {toCharactersAnimation, expandedTimelineAnimation} from "../../animations/summaryPageAnimations";
 import Router from "next/router";
 class SummaryPage extends React.Component {

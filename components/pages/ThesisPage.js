@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "../Slide";
-import "../../stylesheets/pages/thesisStyle.scss";
 import anime from "animejs";
 import Router from "next/router";
 

@@ -19,6 +19,8 @@ class LandingPage extends React.Component {
         this.bottomHalfRef = React.createRef();
         this.videoRef = React.createRef();
         this.titleRef = React.createRef();
+        this.kiteRunnerRef = React.createRef();
+        this.fineBalanceRef = React.createRef();
     }
 
     componentDidUpdate() {
@@ -30,7 +32,7 @@ class LandingPage extends React.Component {
                 easing: "easeInOutQuad"
             })
             anime({
-                targets: this.titleRef.current,
+                targets: [this.titleRef.current, this.kiteRunnerRef.current, this.fineBalanceRef.current],
                 duration: 1000,
                 opacity: 0,
                 easing: "easeInOutCubic",
@@ -50,6 +52,20 @@ class LandingPage extends React.Component {
                 <CameraShotDiv />
                 <div className="top-half" ref={this.topHalfRef}></div>
                 <div className="bottom-half" ref={this.bottomHalfRef}></div>
+                <div className="a-fine-balance--title" ref={this.fineBalanceRef} style={{
+                    position: "absolute",
+                    left: "15%",
+                    top: "12vw",
+                    color: "white",
+                    fontSize: "3vw"
+                }}>A Fine Balance</div>
+                <div className="kite-runner-title" ref={this.kiteRunnerRef} style={{
+                    position: "absolute",
+                    right: "15%",
+                    bottom: "12vw",
+                    color: "white",
+                    fontSize: "3vw"
+                }}>The Kite Runner</div>
                 <div className="title-border" ref={this.titleRef}>
                     <div className="title">Villains</div>
                 </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "../Slide";
-import "../../stylesheets/pages/summaryTimeline.scss";
 import {introTransition} from "../../animations/timelineAnimations";
 import anime from "animejs";
 

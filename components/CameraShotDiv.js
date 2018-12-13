@@ -1,5 +1,4 @@
 import React from "react";
-import "../stylesheets/cameraShotStyle.scss";
 
 const CameraShotDiv = ({color, specificRefs}) => 
     <div className="camera-shot-div">

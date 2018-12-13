@@ -1,5 +1,4 @@
 import React from "react";
-import "../stylesheets/timeline.scss";
 import anime from "animejs";
 
 class Timeline extends React.Component {
@@ -19,7 +18,7 @@ class Timeline extends React.Component {
             anime({
                 targets: this.nodeRefs.map(ref => ref.current),
                 translateX: -maxOffset + window.innerWidth * 3 / 4,
-                duration: 1000,
+                duration: 20000,
                 easing: "easeInOutQuad"
             })
         }

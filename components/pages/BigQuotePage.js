@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "../Slide";
-import "../../stylesheets/pages/prongIntroPage.scss";
 import anime from "animejs";
 import CameraShotDiv from "../CameraShotDiv";
 import Router from "next/router";

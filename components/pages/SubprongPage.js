@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "../Slide";
-import "../../stylesheets/pages/subprongStyle.scss";
 import anime from "animejs";
 import Router from "next/router";
 

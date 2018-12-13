@@ -1,5 +1,4 @@
 import React from "react";
-import "../stylesheets/slide.scss";
 import CustomHead from "./CustomHead";
 
 class Slide extends React.Component {
