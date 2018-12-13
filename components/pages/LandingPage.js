@@ -44,7 +44,7 @@ class LandingPage extends React.Component {
     }
     render() {
         return (
-            <Slide className="landing-page" onClick={() => this.handleSlideClick()}>
+            <Slide className="landing-page" onClick={() => this.handleSlideClick()} backgroundColor={"black"}>
                 <video className="intro-video blurred" ref={this.videoRef}>
                     <source src="/static/english-video.mp4" type="video/mp4"/>
                 </video>
@@ -69,7 +69,7 @@ class LandingPage extends React.Component {
         }
         else {
             // change slide to next
-            Router.push("/slide1");
+            Router.push("/summary");
         }
     }
 }
